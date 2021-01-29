@@ -1,0 +1,84 @@
+/*
+Theme Name: Smartheme
+Theme URI: https://www.luferra.it
+Author: LuFerra
+Author URI: http://wordpress.org/
+Description: Primo tema
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: black, brown, orange, tan, white, yellow, light, one-column, two-columns, right-sidebar, flexible-width, custom-header, custom-menu, editor-style, featured-images, microformats, post-formats, rtl-language-support, sticky-post, translation-ready
+Text Domain: smartheme
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+body {
+  background-color: #ddd;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+h3 {
+  color: tan;
+}
+
+.container {
+  width: 85%;
+  margin: 0 auto;
+  overflow: auto;
+}
+
+.content {
+  float: left;
+  width: 60%;
+}
+
+.widget {
+  float: right;
+  width: 40%;
+}
+
+.img_post img {
+  width: 50%;
+  height: auto;
+}
+
+.main_menu {
+  background-color: #0066cc;
+  color: #fff;
+  padding: 5px;
+}
+
+.main_menu li {
+  list-style: none;
+  display: inline;
+  padding-right: 20px;
+}
+
+.main_menu a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.main_sidebar {
+  border: 1px #203563 solid;
+  margin: 10px;
+  padding: 5px;
+}
+.main_sidebar li {
+  list-style: none;
+  line-height: 30px;
+}
+.main_sidebar a {
+  text-decoration: none;
+}
+.clear {
+  clear: both;
+}
+footer {
+  background-color: #203563;
+  text-align: center;
+  color: white;
+  margin-top: 20px;
+  padding: 10px;
+}
