@@ -34,4 +34,7 @@ register_nav_menus( array(
             'footer_right_menu' => __('Footer right'),
 ) );
 
+//attivazione immagine in evidenza
+add_theme_support('post-thumbnails');
+
 ?>
