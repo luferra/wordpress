@@ -20,7 +20,7 @@ add_action('wp_enqueue_scripts', 'smart_files');
 
 //set lunghezza abstract articoli
 function set_excerpt_length() {
-  return 10;
+  return 20;
 }
 
 add_filter('excerpt_length','set_excerpt_length', 999);

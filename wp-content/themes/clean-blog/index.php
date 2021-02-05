@@ -19,14 +19,14 @@
           <div class="card-body">
             <h5 class="card-title"><?php echo the_title(); ?></h5>
             <h6><?php echo the_tags( 'Tags | #', ' #', '|' ); ?> + <?php echo get_the_category_list( ','); ?></h6>
-            <p class="card-text"><?php echo the_excerpt(); ?></p>
-            <h6>Posted by <a href="#"><?php the_author_posts_link(); ?></a> on <?php echo the_time( 'd m y' ); ?></h6>
+            <p class="card-text"><?php echo excerpt(40); ?></p>
+            <h6>Posted by <a href="#"><?php the_author_posts_link(); ?></a> on <?php echo the_time( 'F j, Y' ); ?></h6>
             <a href="<?php the_permalink(); ?>" class="btn btn-primary">Leggi</a>
           </div>
         </div>
       </div>
       <?php endwhile;
-      else : echo wpautop("Messaggio presonalizzato");
+      else : echo wpautop("Non ci sono note!");
     endif; ?>
     <!-- paginazione -->
 

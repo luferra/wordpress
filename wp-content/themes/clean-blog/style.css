@@ -2,7 +2,7 @@
 Theme Name: Clean-blog
 Author: LuFerra
 Description:  * Start Bootstrap - Clean Blog v5.0.10 (https://startbootstrap.com/theme/clean-blog)<br>* Copyright 2013-2020 Start Bootstrap<br>* Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-clean-blog/blob/master/LICENSE)
-
+Text Domain: cleanblog
  */
 body {
   font-size: 20px;
@@ -381,22 +381,6 @@ form .form-group:first-child .floating-label-form-group {
   border-top: 1px solid #dee2e6;
 }
 
-/* old footer */
-/* footer {
-  padding: 50px 0 65px;
-}
-
-footer .list-inline {
-  margin: 0;
-  padding: 0;
-}
-
-footer .copyright {
-  font-size: 14px;
-  margin-bottom: 0;
-  text-align: center;
-} */
-/* New footer */
 footer {
   width: 100%;
   display: inline-block;
@@ -502,4 +486,10 @@ footer .social a:hover {
 
 .page-item{
   list-style-type: none;
+}
+
+#btnTop {
+  bottom: 45px;
+  right: 24px;
+  display: none;
 }

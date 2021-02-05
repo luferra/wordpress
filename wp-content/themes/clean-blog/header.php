@@ -27,6 +27,7 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <!-- creazione/importazione menu principale -->
+
         <?php
           wp_nav_menu(array(
                 'theme_location' => 'main_menu',
@@ -39,6 +40,7 @@
           ));
 
          ?>
+         <?php get_search_form(); ?>
 
       </div>
     </div>
