@@ -8,8 +8,6 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title><?php bloginfo('name'); ?></title>
-
 <!-- import elementi header - css, ecc -->
   <?php wp_head(); ?>
 

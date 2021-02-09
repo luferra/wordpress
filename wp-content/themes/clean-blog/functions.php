@@ -4,6 +4,8 @@
 require_once('bs4navwalker.php');
 //aggiungo il supporto per i menu in pagina
 add_theme_support( 'menus' );
+//set title page in maniera dinamica
+add_theme_support( 'title-tag' );
 
 //funzione per l'importazione di tutti i file di stile e dei font
 function clean_style() {

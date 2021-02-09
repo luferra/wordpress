@@ -6,7 +6,9 @@
             placeholder="<?php echo esc_attr_x( 'Cerca …', 'placeholder' ) ?>"
             value="<?php echo get_search_query() ?>" name="s"
             title="<?php echo esc_attr_x( 'Search for:', 'label' ) ?>" />
-    <input type="submit" class="btn btn-primary"
-        value="<?php echo esc_attr_x( 'Search', 'submit button' ) ?>" />
+              <button class="rounded-right btn btn-info my-2 my-sm-0 " type="submit">Search</button>
+
           </div>
+
+
 </form>
