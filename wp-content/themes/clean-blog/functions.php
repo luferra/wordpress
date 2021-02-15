@@ -7,6 +7,7 @@ add_theme_support( 'menus' );
 //set title page in maniera dinamica
 add_theme_support( 'title-tag' );
 
+
 //funzione per l'importazione di tutti i file di stile e dei font
 function clean_style() {
   wp_enqueue_style('clean-fonts', 'https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic');
@@ -36,6 +37,29 @@ register_nav_menus( array(
             'footer_right_menu' => __('Footer right'),
 ) );
 
+//area widget
+function arphabet_widgets_init() {
+
+	register_sidebar( array(
+		'name'          => 'Sidebar',
+		'id'            => 'sidebar',
+		'before_widget' => '<div>',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h2 class="rounded">',
+		'after_title'   => '</h2>',
+	) );
+
+  register_sidebar( array(
+    'name'          => 'Footer-left',
+    'id'            => 'foo-left',
+    'before_widget' => '<div class="card-body">',
+    'after_widget'  => '</div>',
+    'before_title'  => '<h5 class="card-title">',
+    'after_title'   => '</h5>',
+  ) );
+
+}
+add_action( 'widgets_init', 'arphabet_widgets_init' );
 //attivazione immagine in evidenza
 add_theme_support('post-thumbnails');
 
