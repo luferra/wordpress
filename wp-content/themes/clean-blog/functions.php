@@ -89,4 +89,53 @@ function content($limit) {
   $content = str_replace(']]>', ']]&gt;', $content);
   return $content;
 }
+
+//registrazione post custum
+function funzionali() {
+  $labels = array(
+    'name' => 'Funzionali',
+    'singular_name' => 'funzionali',
+    'add_new' => 'Aggiungi nuovo',
+    'all_items' => 'Tutti i funzionali',
+    'add_new_item' => 'Nuovo',
+    'edit_item' => 'Modifica',
+    'new_item' => 'Nuovo funzionale',
+    'view_item' => 'Visualizza',
+    'search_item' => 'Ricerca',
+  );
+
+  $args = array(
+    'labels' => $labels,
+    'public' => true,
+    'show_ui' => true,
+    'show_in_menu' => true,
+    'show_in_nav_menu' => true,
+    'has_archive' => true,
+    'publicly_queryable' => true,
+    'query_var' => true,
+    'show_in_rest' => true,
+    'rewrite' => array('slug' => 'funzionali'),
+    'capability_type' => 'post',
+    'hierarchical' => true,
+    'supports' => array(
+      'title',
+      'editor',
+      'excerpt',
+      'custom-fields',
+      'thumbnail',
+      'page-attributes',
+    ),
+    'taxonomies' => array(
+      'category',
+      'post_tag',
+    ),
+    'menu_position' => 5,
+    'menu_icon' => 'dashicons-carrot',
+    'exclude_from_search' => false,
+  );
+
+  register_post_type( 'funzionali', $args );
+}
+
+add_action( 'init', 'funzionali' );
 ?>

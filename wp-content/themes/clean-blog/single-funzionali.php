@@ -15,25 +15,12 @@ if(have_posts()) :
   <article>
     <div class="container">
       <div class="row">
-        <div class="col-lg-8 col-md-10 mx-auto">
+        <div class="col-lg-10 col-md-10 mx-auto">
 
           <?php the_content();?>
 
-          <p><?php the_author();?></p>
-          <div class="bg-primary">
-            <!-- custom field -->
-            <?php the_meta(); ?>
-          </div>
-
         </div>
-        <div class=" col-md-2 mx-auto">
-          <?php if ( is_active_sidebar( 'sidebar' ) ) : ?>
-          	<div id="primary-sidebar" class="primary-sidebar widget-area" role="complementary">
-          		<?php dynamic_sidebar( 'sidebar' ); ?>
 
-          	</div><!-- #primary-sidebar -->
-          <?php endif; ?>
-        </div>
       </div>
       <div id="btnTop" class="btn-large red">
         <a href="#topSection">

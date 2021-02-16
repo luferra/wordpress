@@ -15,11 +15,15 @@
             <?php if ( is_active_sidebar( 'foo-left' ) ) : ?>
             	<div id="primary-sidebar" class="primary-sidebar widget-area" role="complementary">
             		<?php dynamic_sidebar( 'foo-left' ); ?>
-                
+
             	</div><!-- #primary-sidebar -->
               <?php endif; ?>
           </div>
     </div>
+  </div>
+  <div class="row">
+    <iframe src="https://open.spotify.com/embed/artist/6MRGPCGHGGfIOU9TFVyPyI" width="800" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+
   </div>
 </div>
   <hr>

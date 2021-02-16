@@ -3,13 +3,14 @@
 ?>
 <!-- embeddo una parte di codice html presa da un file esterno. Lo poso fare in ogni punto del codice -->
 <?php
-  get_template_part('includes/top-notes');
+
+  get_template_part('includes/top-funz');
+
 ?>
 
 <!-- Main Content Blog-->
 <div class="container">
   <div class="row">
-
       <?php if(have_posts()) :
         while(have_posts()) : the_post();
         //Articoli?>
@@ -25,20 +26,23 @@
           </div>
         </div>
       </div>
-      <?php endwhile;
-      else : echo wpautop("Non ci sono note!");
-    endif; ?>
+    <?php endwhile; else : ?>
+      <h2>No result</h2>
+    <?php endif; ?>
+    <!-- paginazione -->
+
+
   </div>
-  <!-- paginazione -->
-  <nav aria-label="Page navigation">
-    <ul class="pagination">
-      <li class="page-item">
-        <?php
-          echo paginate_links();
-        ?>
-      </li>
-    </ul>
-  </nav>
+    <nav>
+      <ul class="pagination-sm justify-content-center my-5">
+        <li class="page-item">
+          <?php
+            echo paginate_links();
+          ?>
+        </li>
+
+      </ul>
+    </nav>
 
 
   </div>
